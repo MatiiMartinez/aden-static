@@ -7,7 +7,6 @@ const Router = () => {
   return (
     <ReachRouter>
       <Workshop path="/app/:type/:id" />
-      <NotFoundPage default />
     </ReachRouter>
   )
 }

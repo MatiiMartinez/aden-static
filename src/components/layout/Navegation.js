@@ -36,7 +36,7 @@ const Header = styled.header`
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     padding: 0 2rem;
   }
 `
@@ -44,4 +44,8 @@ const Header = styled.header`
 const Logo = styled.img`
   width: 250px;
   height: auto;
+
+  @media (max-width: 992px) {
+    width: 150px;
+  }
 `

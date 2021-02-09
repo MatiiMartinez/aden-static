@@ -17,7 +17,7 @@ const Workshop = props => {
   useEffect(() => {
     async function getSource() {
       await fetch(
-        `${process.env.REACT_APP_REPO}${
+        `${process.env.GATSBY_REPO}${
           type === "workshop" ? "workshop" : "v1/microcontent"
         }/${id}`
       )

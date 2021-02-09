@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: ``,
-    description: ``,
+    title: `Workshop`,
+    description: `Compartir workshop`,
     image: ``,
   },
   plugins: [

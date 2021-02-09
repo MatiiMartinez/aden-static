@@ -18,7 +18,7 @@ const Workshop = props => {
     async function getSource() {
       await fetch(
         `${process.env.REACT_APP_REPO}${
-          type === "workshop" ? type : "v1/microcontent"
+          type === "workshop" ? "workshop" : "v1/microcontent"
         }/${id}`
       )
         .then(res => res.json())

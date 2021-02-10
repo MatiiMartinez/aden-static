@@ -25,11 +25,6 @@ const IndexPage = () => {
 
   return (
     <>
-      <SEO
-        title="Titulo!"
-        description="Descripcion del descripcio del descripcion del"
-        image={item.imagen}
-      />
       <Loading />
     </>
   )

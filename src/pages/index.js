@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import Loading from "../components/Loading"
+import SEO from "../components/seo"
 
 const IndexPage = () => {
   useEffect(() => {
@@ -7,7 +8,11 @@ const IndexPage = () => {
     isBrowser() && window.location.replace("https://app.aden.org/")
   }, [])
 
-  return <Loading />
+  return
+  ;<>
+    <SEO />
+    <Loading />
+  </>
 }
 
 export default IndexPage

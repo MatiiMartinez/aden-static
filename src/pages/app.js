@@ -1,11 +1,10 @@
 import React from "react"
 import { Router as ReachRouter } from "@reach/router"
 import Workshop from "../modules/Workshop"
-import NotFoundPage from "./404"
 
 const Router = () => {
   return (
-    <ReachRouter>
+    <ReachRouter basepath="/">
       <Workshop path="/app/:type/:id" />
     </ReachRouter>
   )

@@ -3,7 +3,6 @@ import styled from "styled-components"
 import ReactPlayer from "react-player"
 
 import Layout from "../components/layout/Layout"
-import SEO from "../components/seo"
 import { ScheduleRounded } from "@material-ui/icons"
 import FormToCampus from "../components/FormToCampus"
 import Testimony from "../components/Testimony"
@@ -35,12 +34,11 @@ const Workshop = props => {
   }
 
   return (
-    <Layout>
-      <SEO
-        title={item.nombre_publicacion}
-        description={item.descripcion}
-        image={item.imagen}
-      />
+    <Layout
+      title={item.nombre_publicacion}
+      description={item.descripcion}
+      image={item.imagen}
+    >
       <WorkshopContainer>
         <FirstColumn>
           {type === "workshop" ? (

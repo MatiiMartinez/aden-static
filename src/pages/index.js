@@ -8,11 +8,12 @@ const IndexPage = () => {
     isBrowser() && window.location.replace("https://app.aden.org/")
   }, [])
 
-  return
-  ;<>
-    <SEO />
-    <Loading />
-  </>
+  return (
+    <>
+      <SEO />
+      <Loading />
+    </>
+  )
 }
 
 export default IndexPage
